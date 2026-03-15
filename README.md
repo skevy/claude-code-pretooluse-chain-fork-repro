@@ -10,7 +10,7 @@ When a `PreToolUse` hook is defined and the Agent SDK's `query()` is used with `
 npm install
 ```
 
-The `.claude/settings.local.json` file defines a trivial async PreToolUse hook (`echo noop`).
+The `.claude/settings.json` file defines a trivial async PreToolUse hook (`echo noop`).
 
 ## Run
 
@@ -36,4 +36,4 @@ assistant (tool_use)
 
 ## Key isolation
 
-Remove the `PreToolUse` hook from `.claude/settings.local.json` and rerun — the chain is clean (0 orphans). The hook is the only variable.
+Remove the `PreToolUse` hook from `.claude/settings.json` and rerun — the chain is clean (0 orphans). The hook is the only variable.

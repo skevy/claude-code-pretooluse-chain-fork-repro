@@ -51,7 +51,7 @@ const response = query({
     cwd: CWD,
     model: "sonnet",
     permissionMode: "bypassPermissions",
-    settingSources: ["user", "project", "local"],
+    settingSources: ["project"],
     canUseTool: async (toolName, input) => {
       if (toolName === "AskUserQuestion") {
         return new Promise((r) => (resolveApproval = r));
