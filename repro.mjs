@@ -33,8 +33,6 @@ async function* prompt() {
         },
       ],
     },
-    parent_tool_use_id: null,
-    session_id: "",
   };
   while (!done) {
     yield await new Promise((r) => (injectResolve = r));
