@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "echo noop",
+            "timeout": 5,
+            "type": "command",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
