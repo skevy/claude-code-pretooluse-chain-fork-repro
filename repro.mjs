@@ -94,8 +94,6 @@ for await (const msg of response) {
               role: "user",
               content: [{ type: "text", text: "Human: Say TURN_2_DONE" }],
             },
-            parent_tool_use_id: null,
-            session_id: sessionId ?? "",
           }),
         1000
       );
